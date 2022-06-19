@@ -1,0 +1,113 @@
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(84, 83, 83);
+}
+
+div{
+    padding: 0;
+    margin:0;
+}
+
+.game{
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.display{
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.display div{
+    text-align: center;
+    min-width: calc(100%/3);
+}
+
+.display div h2{
+    margin-bottom: 45px;
+}
+
+.buttons{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button{
+    margin: 0 5px;
+    padding: 10px 0;
+    box-shadow: 2px 2px 5px #888888;
+    border: 0.2px solid rgb(191, 190, 190);
+    border-radius: 10px;
+    min-width: 110px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.buttons button:hover{
+    box-shadow: 5px 10px 15px #888888;
+}
+
+
+img{
+    width: 100%;
+}
+
+#result{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .game{
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .game{
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .game{
+        width: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .game{
+        width: 70%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .game{
+        width: 50%;
+    }
+}
+
